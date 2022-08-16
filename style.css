@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+.btn_side{
+    padding: 10px 15px;
+}
+.color_btns{
+    margin-left: 10px;
+}
+.black, .rainbow, .clear{
+    padding: 10px 15px;
+}
+
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.square{
+    border: 0.01px solid black;
+}
