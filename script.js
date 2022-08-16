@@ -27,8 +27,10 @@ createGrid()
 const sideBtn = document.querySelector('.btn_side')
 sideBtn.addEventListener('click', ()=>{
     do{
-        side = parseInt(prompt('How many square do you want of a side? cannot bigger than 100','16'))
-    }while(side > 100 || side < 1)
+        let input = prompt('How many square do you want of a side? 1~100','16')
+        if(!input) input = side
+        side = parseInt(input)
+    }while(side > 100 || side < 1 || isNaN(side) )
     clearGrid()
 })
 
